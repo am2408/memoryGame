@@ -6,7 +6,7 @@
 
 body {
     margin: 0;
-    background-color: #333;
+    background-color: black;
     color: white;
     width: 100%;
     height: 100vh;
@@ -27,12 +27,22 @@ body {
 
 .cards {
     width: 90px;
-    height: 110px;
+    height: 120px;
     margin: 0 10px;
     margin-bottom: 10px;
     transition: all 250ms;
-    background-color: black;
+    background-color: #00db22;
     cursor: pointer;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.selectedCard {
+    transform: rotateY(180deg);
+    background-color: black;
+    border: 2px solid #00db22;
 }
 
 #win {

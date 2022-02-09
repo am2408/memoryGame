@@ -15,12 +15,12 @@ body {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 70%;
+    width: 90%;
     margin: auto;
 }
 
 .cards {
-    width: 150px;
+    width: 22%;
     height: 200px;
     margin-bottom: 10px;
     transition: all 250ms;

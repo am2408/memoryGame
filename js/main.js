@@ -83,6 +83,9 @@ function checker() {
 }
 
 function startGame() {
+    let title = document.createElement('h1');
+    title.className = 'title titleMain';
+    title.innerHTML = 'Memory Game';
     for (let i = 0; i < gameCards; i++) {
         let color = getRandomColor();
         do {
@@ -107,6 +110,7 @@ function startGame() {
     for (let i = 0; i < cards.length; i++) {
         container.appendChild(container.children[getRandomInt(cards.length)]);
     }
+    container.prepend(title);
 }
 
 function resetGame() {

@@ -4,6 +4,15 @@
     padding: 0;
 }
 
+*::-webkit-scrollbar {
+    width: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #00db22;
+    border-radius: 20px;
+}
+
 body {
     margin: 0;
     background-color: black;
@@ -23,6 +32,11 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    max-height: 80vh;
+    overflow: hidden;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: #00db22 black;
 }
 
 .cards {
@@ -61,6 +75,8 @@ body {
 .title.titleMain {
     font-size: 50px;
     text-align: center;
+    width: 100%;
+    margin: 20px 0;
 }
 
 .text {

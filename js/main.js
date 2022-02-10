@@ -19,7 +19,7 @@ function timeCounter() {
         s = 0;
         m++;
     }
-    userTime = m + ' minute(s) ' + s + ' seconde(s)';
+    userTime = m + ' min ' + s + 's';
 }
 
 function getRandomInt(max) {

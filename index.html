@@ -1,21 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Memory Game 🧠</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <title>Memory game</title>
 </head>
 
 <body>
-    <div id="container"></div>
-    <div id="win">
-        <h1 class="title titleMain">Nice one !</h1>
-        <p class="text">Your time here: <span id="time"></span> !</p>
-        <button class="btn" onclick="resetGame()">Restart</button>
+    <h1>Ultimate Memory Game 🧠</h1>
+
+    <div class="intro" id="intro">
+        <h2>Choose your game</h2>
+        <label>Difficulty :
+            <select id="difficulty">
+                <option value="easy">Easy (6 matching)</option>
+                <option value="medium" selected>Medium (11 matching)</option>
+                <option value="hard">Hard (33 matching)</option>
+            </select>
+        </label>
+        <label>Mode :
+            <select id="mode">
+                <option value="color">Color</option>
+                <option value="icon">Emoji</option>
+                <option value="both" selected>Both</option>
+            </select>
+        </label>
+        <label>Versus :
+            <select id="gameType">
+                <option value="solo" selected>Solo</option>
+                <option value="1v1">1 vs 1</option>
+            </select>
+        </label>
+        <label id="opponentZone">Opponent :
+            <select id="opponent">
+                <option value="none">2 player (turn by turn)</option>
+                <option value="cpu-easy">Computer - Easy</option>
+                <option value="cpu-medium">Computer - Medium</option>
+                <option value="cpu-impossible">Computer - Impossible</option>
+            </select>
+        </label>
+        <button class="btn" id="startGame">Start</button>
     </div>
+
+    <div id="timer" class="hidden">Time : 0s</div>
+    <div id="playerInfo" class="hidden"
+        style="margin-bottom: 10px; font-weight: bold; font-size: 1.2rem; color: #ffd700;"></div>
+
+    <div class="game-container hidden" id="game"></div>
+    <div id="noAllow" class="noAllow hidden"></div>
+    <div class="win-popup hidden" id="win">
+        <h2 id="endTitle"></h2>
+        <p id="time"></p>
+        <button class="btn" id="restart">Replay</button>
+    </div>
+
+    <div class="top-scores hidden" id="scores">
+        <h3>🏆 Top 5</h3>
+        <ol id="top-scores-list"></ol>
+    </div>
+
     <script src="js/main.js"></script>
 </body>
 

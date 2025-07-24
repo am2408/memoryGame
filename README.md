@@ -34,7 +34,7 @@ A memory game that’s far from innocent... Get ready to rage, laugh, think — 
 
 ## 📸 Screenshots
 
-![Screenshot1](screen1.PNG)  
+![Screenshot1](screen.PNG)  
 ![Screenshot2](screen2.PNG)
 
 ---

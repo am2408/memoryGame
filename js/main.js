@@ -224,7 +224,7 @@ class MemoryGame {
         this.endTitle.textContent = "🎉 Bravo !"
         this.winPopup.classList.remove('hidden');
         this.noAllow.classList.remove('hidden');
-        this.timeDisplay.textContent = `Finish in ${duration} secondes !`;
+        this.timeDisplay.textContent = `Finish in ${duration} seconds !`;
         this.saveScore(duration);
         this.renderTopScores();
     }

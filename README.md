@@ -52,7 +52,7 @@ A memory game that’s far from innocent... Get ready to rage, laugh, think — 
 
 No installation or server needed:
 
-1. Download or clone the project
+1. Download or clone the project or access here ! [Go to play!](https://memory-game-swart-kappa.vercel.app/)
 2. Open `index.html` in your browser
 3. Hit “Start” and prepare your memory 👀
 
